@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79645faf-2ea2-4a16-b084-65e9c004b4ac" name="Default Changelist" comment="" />
+    <list default="true" id="79645faf-2ea2-4a16-b084-65e9c004b4ac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decodificador_ADN/src/main/java/com/sindominio/decodificador_adn/ui/FrameUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/Decodificador_ADN/src/main/java/com/sindominio/decodificador_adn/ui/FrameUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decodificador_ADN/src/main/java/com/sindominio/decodificador_adn/ui/FrameUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Decodificador_ADN/src/main/java/com/sindominio/decodificador_adn/ui/FrameUI.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595790117318</updated>
       <workItem from="1595790118485" duration="1829000" />
+      <workItem from="1595807543304" duration="764000" />
     </task>
     <servers />
   </component>
@@ -81,6 +86,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="767" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1595791248267">
@@ -91,5 +97,9 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="440" y="152" key="SettingsEditor/0.0.1920.1044@0.0.1920.1044" timestamp="1595790950245" />
+    <state x="677" y="398" width="568" height="263" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog" timestamp="1595807902266">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="677" y="398" width="568" height="263" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1595807902266" />
   </component>
 </project>
