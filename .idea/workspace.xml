@@ -19,7 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79645faf-2ea2-4a16-b084-65e9c004b4ac" name="Default Changelist" comment="" />
+    <list default="true" id="79645faf-2ea2-4a16-b084-65e9c004b4ac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decodificador_ADN/src/main/java/com/sindominio/decodificador_adn/clasesprueba/Adn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Decodificador_ADN/src/main/java/com/sindominio/decodificador_adn/clasesprueba/Adn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decodificador_ADN/target/classes/com/sindominio/decodificador_adn/clasesprueba/Adn.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decodificador_ADN/target/classes/com/sindominio/decodificador_adn/clasesprueba/Adn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decodificador_ADN/target/classes/com/sindominio/decodificador_adn/clasesprueba/Prueba_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decodificador_ADN/target/classes/com/sindominio/decodificador_adn/clasesprueba/Prueba_1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decodificador_ADN/target/classes/com/sindominio/decodificador_adn/ui/FramePrincipal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decodificador_ADN/target/classes/com/sindominio/decodificador_adn/ui/FramePrincipal$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decodificador_ADN/target/classes/com/sindominio/decodificador_adn/ui/FramePrincipal$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decodificador_ADN/target/classes/com/sindominio/decodificador_adn/ui/FramePrincipal$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decodificador_ADN/target/classes/com/sindominio/decodificador_adn/ui/FramePrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decodificador_ADN/target/classes/com/sindominio/decodificador_adn/ui/FramePrincipal.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +76,7 @@
       <workItem from="1595790118485" duration="1829000" />
       <workItem from="1595807543304" duration="1702000" />
       <workItem from="1595809292887" duration="686000" />
+      <workItem from="1595819834457" duration="893000" />
     </task>
     <servers />
   </component>
@@ -86,10 +96,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="418" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595819994039">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="418" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1595819994039" />
     <state x="767" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1595791248267">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="767" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044@0.0.1920.1044" timestamp="1595791248267" />
+    <state x="759" y="154" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1595820127450">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="759" y="154" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1595820127450" />
     <state x="440" y="152" key="SettingsEditor" timestamp="1595790950245">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
