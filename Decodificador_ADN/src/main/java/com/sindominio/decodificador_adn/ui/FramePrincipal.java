@@ -5,7 +5,7 @@
  */
 package com.sindominio.decodificador_adn.ui;
 
-import com.sindominio.decodificador_adn.clasesprueba.AndTesting;
+import com.sindominio.decodificador_adn.clasesprueba.Adn;
 
 /**
  *
@@ -121,8 +121,10 @@ public class FramePrincipal extends javax.swing.JFrame {
         }else{
             lblWarning1.setVisible(false);
             lblWarning2.setVisible(false);
-            AndTesting  adnTest = new AndTesting(txtPrimerADN.getText(), txtSegundoADN.getText());
+            
+            Adn  adnTest = new Adn(txtPrimerADN.getText(), txtSegundoADN.getText());
             adnTest.compararStr();
+            
             lblResultado.setVisible(true);
             lblResultado.setText("LA cadena con mayor Nucleotidos repetidos: "+adnTest.getCadenaFinal());
         }

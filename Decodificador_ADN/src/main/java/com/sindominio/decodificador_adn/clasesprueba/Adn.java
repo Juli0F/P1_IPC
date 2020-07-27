@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class AndTesting {
+public class Adn {
 
     private String str;
     private String str2;
@@ -21,11 +21,10 @@ public class AndTesting {
 
     private String nucleotido;
 
-    public AndTesting(String str, String str2) {
+    public Adn(String str, String str2) {
         this.str = str;
         this.str2 = str2;
         this.nucleotidosChar = str2.toCharArray();
-
 
         coincidenciasList = new ArrayList<>();
 
@@ -34,7 +33,7 @@ public class AndTesting {
         coincidencia = new StringBuilder();
         tempIn = new StringBuilder();
 
-        currentIn="";
+        currentIn = "";
         this.cadenaFinal = "";
 
     }
@@ -47,30 +46,25 @@ public class AndTesting {
         this.cadenaFinal = cadenaFinal;
     }
 
-    public void compararStr(){
+    public void compararStr() {
 
-
-        //this.posicion = 0;
-        while(posicion != (str.length())){
+        while (posicion != (str.length())) {
 
             currentIn = String.valueOf(str.charAt(posicion));
             tempIn.append(currentIn);
-            if (str2.contains(tempIn)){
+
+            if (str2.contains(tempIn)) {
 
                 tempCoicidencia.append(str.charAt(posicion));
                 coincidencia.append(str.charAt(posicion));
 
                 posicion++;
-                
-                
-                
                 coincidenciasList.add(tempCoicidencia.toString());
-                
-                
-              
-            }else{
+
+            } else {
+
                 currentIn = "";
-               tempIn = new  StringBuilder();
+                tempIn = new StringBuilder();
                 tempCoicidencia = new StringBuilder();
             }
 
@@ -81,37 +75,24 @@ public class AndTesting {
             }
         }
         String[] partes = str.split(cadenaFinal);
-        System.out.println(cadenaFinal+" +++===");
+        System.out.println("size ==> ==> ==> " + partes.length);
         
-        
-        
-        System.out.println("size ==> ==> ==> "+partes.length);
         if (partes.length > 0) {
-            
-        int indexCaracter = partes[0].length()-1;
-        char c;
+
+            int indexCaracter = partes[0].length() - 1;
+            char c;
 
             c = partes[0].charAt(indexCaracter);
-            
-                String izquierdaStr =  String.valueOf(c)+ cadenaFinal;
-                if (str2.contains(izquierdaStr)) {
-                    cadenaFinal = izquierdaStr;
-                }
+
+            String izquierdaStr = String.valueOf(c) + cadenaFinal;
+            if (str2.contains(izquierdaStr)) {
+                cadenaFinal = izquierdaStr;
+            }
 
         }
 
-                
         System.out.println("++> " + this.cadenaFinal);
-               
-                
-        
+
     }
 
-    public static void main(String[] args) {
-
-        AndTesting tes = new AndTesting("ctgactga","actgagc");
-
-        System.out.println("Inicia");
-        tes.compararStr();
-    }
 }
