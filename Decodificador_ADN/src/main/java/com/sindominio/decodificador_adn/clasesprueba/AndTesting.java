@@ -61,7 +61,7 @@ public class AndTesting {
                 coincidencia.append(str.charAt(posicion));
 
                 posicion++;
-                System.out.println(tempCoicidencia);
+                
                 
                 
                 coincidenciasList.add(tempCoicidencia.toString());
@@ -70,18 +70,11 @@ public class AndTesting {
               
             }else{
                 currentIn = "";
-                //CTTCCT
-                //tempIn.delete(0, 1);
-               // System.out.println("    "+ tempIn.toString());
                tempIn = new  StringBuilder();
                 tempCoicidencia = new StringBuilder();
             }
 
         }
-        
-        //coincidenciasList.sort(c);
-
-
         for (String string : coincidenciasList) {
             if (string.length() > cadenaFinal.length()) {
                 cadenaFinal = string;
@@ -108,7 +101,7 @@ public class AndTesting {
         }
 
                 
-        System.out.println("++> " + cadenaFinal);
+        System.out.println("++> " + this.cadenaFinal);
                
                 
         

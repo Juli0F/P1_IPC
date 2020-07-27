@@ -5,6 +5,8 @@
  */
 package com.sindominio.decodificador_adn.ui;
 
+import com.sindominio.decodificador_adn.clasesprueba.AndTesting;
+
 /**
  *
  * @author julio
@@ -15,7 +17,12 @@ public class FramePrincipal extends javax.swing.JFrame {
      * Creates new form FramePrincipal
      */
     public FramePrincipal() {
+        
         initComponents();
+        setSize(514, 490);
+        lblResultado.setVisible(false);
+        lblWarning1.setVisible(false);
+        lblWarning2.setVisible(false);
     }
 
     /**
@@ -38,6 +45,8 @@ public class FramePrincipal extends javax.swing.JFrame {
         btnNuevo = new javax.swing.JButton();
         lineSeparator = new javax.swing.JSeparator();
         btnEncontrar = new javax.swing.JButton();
+        lblWarning2 = new javax.swing.JLabel();
+        lblWarning1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -56,7 +65,9 @@ public class FramePrincipal extends javax.swing.JFrame {
 
         jLabel3.setText("Decodificador De ADN");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(30, 20, 530, 40);
+        jLabel3.setBounds(30, 20, 430, 40);
+
+        lblResultado.setForeground(new java.awt.Color(0, 0, 255));
         getContentPane().add(lblResultado);
         lblResultado.setBounds(60, 310, 340, 50);
 
@@ -69,10 +80,15 @@ public class FramePrincipal extends javax.swing.JFrame {
         jLabel5.setBounds(60, 440, 380, 40);
 
         btnNuevo.setText("Nuevo");
+        btnNuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevoActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnNuevo);
-        btnNuevo.setBounds(320, 220, 120, 50);
+        btnNuevo.setBounds(320, 230, 120, 50);
         getContentPane().add(lineSeparator);
-        lineSeparator.setBounds(20, 280, 450, 10);
+        lineSeparator.setBounds(10, 280, 460, 2);
 
         btnEncontrar.setText("Encontrar");
         btnEncontrar.addActionListener(new java.awt.event.ActionListener() {
@@ -81,14 +97,42 @@ public class FramePrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnEncontrar);
-        btnEncontrar.setBounds(180, 220, 120, 50);
+        btnEncontrar.setBounds(180, 230, 120, 50);
+
+        lblWarning2.setForeground(new java.awt.Color(204, 0, 51));
+        lblWarning2.setText("Debe LLenar Este Campo");
+        getContentPane().add(lblWarning2);
+        lblWarning2.setBounds(190, 200, 260, 17);
+
+        lblWarning1.setForeground(new java.awt.Color(204, 0, 51));
+        lblWarning1.setText("Debe LLenar Este Campo");
+        getContentPane().add(lblWarning1);
+        lblWarning1.setBounds(190, 130, 260, 17);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnEncontrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEncontrarActionPerformed
         
+        if (txtPrimerADN.getText().isEmpty() ) {
+            lblWarning1.setVisible(true);
+        }else if (txtSegundoADN.getText().isEmpty()) {
+            lblWarning2.setVisible(true);
+        }else{
+            lblWarning1.setVisible(false);
+            lblWarning2.setVisible(false);
+            AndTesting  adnTest = new AndTesting(txtPrimerADN.getText(), txtSegundoADN.getText());
+            adnTest.compararStr();
+            lblResultado.setVisible(true);
+            lblResultado.setText("LA cadena con mayor Nucleotidos repetidos: "+adnTest.getCadenaFinal());
+        }
     }//GEN-LAST:event_btnEncontrarActionPerformed
+
+    private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
+        txtPrimerADN.setText("");
+        txtSegundoADN.setText("");
+        lblResultado.setVisible(false);
+    }//GEN-LAST:event_btnNuevoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -134,6 +178,8 @@ public class FramePrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel lblResultado;
+    private javax.swing.JLabel lblWarning1;
+    private javax.swing.JLabel lblWarning2;
     private javax.swing.JSeparator lineSeparator;
     private javax.swing.JTextField txtPrimerADN;
     private javax.swing.JTextField txtSegundoADN;

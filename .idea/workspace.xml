@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79645faf-2ea2-4a16-b084-65e9c004b4ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decodificador_ADN/src/main/java/com/sindominio/decodificador_adn/ui/FrameUI.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decodificador_ADN/src/main/java/com/sindominio/decodificador_adn/ui/FrameUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decodificador_ADN/target/classes/com/sindominio/decodificador_adn/ui/FrameUI.class" beforeDir="false" />
-    </list>
+    <list default="true" id="79645faf-2ea2-4a16-b084-65e9c004b4ac" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +66,7 @@
       <updated>1595790117318</updated>
       <workItem from="1595790118485" duration="1829000" />
       <workItem from="1595807543304" duration="1702000" />
+      <workItem from="1595809292887" duration="686000" />
     </task>
     <servers />
   </component>
